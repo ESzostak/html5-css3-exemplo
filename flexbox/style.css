@@ -14,9 +14,9 @@
 }
 
 .flex-item {
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 320px; */
+    /* flex-grow: 1; --> preencher o espaço em branco
+    flex-shrink: 1; --> permite o elemento diminuir conforme o viewport
+    flex-basis: 320px; tamanho minimo */
      flex: 1 1 320px; /*Atalho para grow / shrink / basis */
     color: white;
     width: 32%;

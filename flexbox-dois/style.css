@@ -2,34 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
     font-family: sans-serif;
 }
-.flex-container {
+
+p {
+    margin: 0 0 24px;
+}
+
+.two-columns {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+}
+
+.two-columns .col {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    padding: 15px;
+    margin: 30px;
+}
+
+.gallery {
     flex-flow: row wrap;
-    background-color: darkgreen;
-    
+    display: flex;
 }
 
-.flex-item {
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 320px; */
-     flex: 1 1 320px; /*Atalho para grow / shrink / basis */
-    color: white;
-    width: 32%;
-    height: 200px;
-    background-color: darkgray;
+.gallery .img {
+    flex: 1 1 20%;
+    height: 50px;
+    background-color:darkblue;
     margin: 10px;
-}
-
-.flex-item:nth-child(2) {
-    background-color: darkblue;
-    flex-grow: 2;
-    
-}
-.flex-item:nth-child(3) {
-    order: 5;
 }
