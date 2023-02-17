@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background-color: darkgreen;
+    
+}
+
+.flex-item {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 320px; */
+     flex: 1 1 320px; /*Atalho para grow / shrink / basis */
+    color: white;
+    width: 32%;
+    height: 200px;
+    background-color: darkgray;
+    margin: 10px;
+}
+
+.flex-item:nth-child(2) {
+    background-color: darkblue;
+    flex-grow: 2;
+    
+}
+.flex-item:nth-child(3) {
+    order: 5;
+}
